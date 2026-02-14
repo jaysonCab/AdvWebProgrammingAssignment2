@@ -4,6 +4,26 @@
     <title>Test</title>
 </head>
 <body>
-    <h1>HELLO</h1>
+
+    <h1>Movie Search Application</h1>
+
+    <form id="searchForm">
+        <input type="text" id="title" placeholder="Movie Title" required>
+        <input type="number" id="year" placeholder="Year">
+        <select id="type">
+            <option value="">Any Type</option>
+            <option value="movie">Movie</option>
+            <option value="series">Series</option>
+            <option value="episode">Episode</option>
+        </select>
+
+        <button type="submit">Search</button>
+    </form>
+
+    <div id="results"></div>
+    <!-- Require an empty div to place results in dynamically -->
+
+    <script src="script.js"></script>
 </body>
+      
 </html>
