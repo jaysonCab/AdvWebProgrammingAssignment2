@@ -1,0 +1,12 @@
+I completd this assignment after beginning the project 1, milestone 2 MVC setup using mustache to display variable front ends without having to refresh the page.
+This assignment, however, encorperated a different strategy. On commit 7c8c1a9c6ad58393ce7365df8a9e2d00b1a962d8, I created an ampty div variable within the HTML
+page and through script.js, manipulated the DOM to display exact front end HTML commands. Since the front end displays parts of the DOM that were updated, by
+replacing this blank container of sorts with precise HTML commands you are able to dynamically change the front end, in this case I utilized an API call to populate
+an HTML template and push this template to update the DOM. 
+
+There was one simple experimentation I conducted that served as a quality of life change that I believe had a great impact which was while this asynchronous call
+of the API was being conducted, there could be a long wait time before the button is clicked and the information would show up. On commit 
+56952b0aca41b3a11bcd6c2f16f202d2b15e7eff, the sequence of events that occur immidiately when the button is pressed to submit is to edit this placeholder div
+with the text to display, 'Currently loading please wait'. Once the API data is fetched through the endpoint, that is when I re-update that same div element
+with the proper information. This optional quality of life change helps the user know the application is working as expected rather than being left with a blank
+screen while things are loading, causing the user to second guess if it's working or not.
