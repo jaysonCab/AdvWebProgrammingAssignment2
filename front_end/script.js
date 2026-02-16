@@ -7,6 +7,7 @@ document.getElementById("searchForm").addEventListener("submit", async function 
     const type = document.getElementById("type").value;
     
     const resultsDiv = document.getElementById("results");
+    resultsDiv.innerHTML = `<p>[ Loading Content, please wait ]</p>`;
     
     const response = await fetch("/api/movie", {
             method: "POST",
@@ -41,3 +42,5 @@ document.getElementById("searchForm").addEventListener("submit", async function 
         </div>
     `;
 });
+
+// This funciton replaces information within the HTML DOM live without refreshing the page
