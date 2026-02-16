@@ -12,8 +12,8 @@ app.listen(PORT, function() {
 });
 
 app.post("/api/movie", async (req, res) => {
-    const { title, year, type } = req.body;
 
+    const { title, year, type } = req.body;
     const apiKey = "ad9d8249";
 
     const response = await axios.get("http://www.omdbapi.com/", {
@@ -29,7 +29,6 @@ app.post("/api/movie", async (req, res) => {
 
     }
 );
-
 
 app.post("/api/test", (req, res) => {
     console.log(req.body);
