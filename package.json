@@ -22,7 +22,7 @@
   "homepage": "https://github.com/jaysonCab/AdvWebProgrammingAssignment2#readme",
   "dependencies": {
     "axios": "^1.13.5",
-    "express": "^5.2.1"
+    "express": "^4.22.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.11"
