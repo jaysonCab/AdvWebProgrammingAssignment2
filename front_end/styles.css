@@ -3,18 +3,39 @@
     align-items: flex-start;
     gap: 16px;
     border-radius: 8px;
+    max-width: 900px;
+    margin: 50px auto;
 }
-  
+
 .moviePoster {
     max-width: 180px;
     height: auto;
     border-radius: 6px;
 }
-  
-.h2 {
-    margin: 0 0 8px 0;
+
+/*
+Usually I use classes for identifiers for css which requires prefix .
+You can use prefix # for things with id as the label.
+Then of course, no prefix means all with that tag.
+*/
+
+#searchForm {
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+h1 {
+    font-family: 'Playwrite NZ Basic', cursive;
+    text-align: center;
+    margin: 50px, 0, 0, 0;
 }
   
-.p {
+h2 {
+    margin: 8px 0;
+}
+  
+p {
     margin: 6px 0;
 }

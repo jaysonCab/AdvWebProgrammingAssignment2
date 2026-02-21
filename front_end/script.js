@@ -32,12 +32,12 @@ document.getElementById("searchForm").addEventListener("submit", async function 
             ${posterImage}
             <div class="movie-info">
                 <h2>${data.Title} (${data.Year})</h2>
-                <p>Type: ${data.Type}</p>
-                <p>Rated: ${data.Rated}</p>
-                <p>Genre: ${data.Genre}</p>
-                <p>Director: ${data.Director}</p>
-                <p>IMDb: ${data.imdbRating}</p>
-                <p>Plot: ${data.Plot}</p>
+                <p><b>Type</b>: ${data.Type}</p>
+                <p><b>Rated</b>: ${data.Rated}</p>
+                <p><b>Genre</b>: ${data.Genre}</p>
+                <p><b>Director</b>: ${data.Director}</p>
+                <p><b>IMDb</b>: ${data.imdbRating}</p>
+                <p><b>Plot</b>: ${data.Plot}</p>
             </div>
         </div>
     `;
